@@ -22,6 +22,9 @@
     border-bottom: 5px solid white;
     transition: 0.5s;
 }
+.base-title-container:not(:hover){
+    transition-duration: 0.25s;
+}
 .base-subtitle{
     font-family: "Century Gothic";
     font-size: 28px;
@@ -122,6 +125,16 @@
     box-shadow: 0px 0px 25px black;
     transform: scale(1.05);
     transition-duration: 0.5s;
+}
+.github-button:not(:hover){
+    transition-duration: 0.25s;
+}
+.github-button:active{
+    transform: scale(0.9);
+    transition: ease-out 0.25s;
+}
+.github-button:not(:active){
+    transition-duration: 0.25s;
 }
 .direct-link{
     width: 300px;
