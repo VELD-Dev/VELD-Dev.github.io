@@ -159,6 +159,16 @@
     transform: scale(1.05);
     transition-duration: 0.5s;
 }
+.direct-link:not(:hover){
+    transition-duration: 0.25s;
+}
+.direct-link:active{
+    transform: scale(0.9);
+    transition-duration: 0.5s;
+}
+.direct-link:not(:hover){
+    transition-duration: 0.25s;
+}
 .download-show{
     text-align: center;
     font-family: "Century Gothic";
