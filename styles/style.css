@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Century Gothic";
+    src: url("Century\ Gothic.ttf") format("ttf");
+}
+
 .base-title{
     font-family: "Century Gothic";
     font-size: 52px;
