@@ -1,6 +1,7 @@
 @font-face {
     font-family: "Century Gothic";
     src: url("Century\ Gothic.ttf") format("ttf");
+    font-display: block;
 }
 
 .base-title{
