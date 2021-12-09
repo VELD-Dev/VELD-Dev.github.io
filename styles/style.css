@@ -3,6 +3,10 @@
     src: url("Century\ Gothic.ttf") format("truetype");
     font-display: block;
 }
+@font-face {
+    font-family: "Geosans Light";
+    src: url("Geosans\ Light.ttf") format("truetype");
+}
 
 .base-title{
     font-family: "Century Gothic";
