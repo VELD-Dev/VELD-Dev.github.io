@@ -15,7 +15,7 @@
 }
 
 .base-title{
-    font-family: "Century Gothic";
+    font-family: "Century Gothic" !important;
     font-size: 52px;
     color: white;
     font-weight: bold;
@@ -42,7 +42,7 @@
     transition-duration: 0.25s;
 }
 .base-subtitle{
-    font-family: "Century Gothic";
+    font-family: "Century Gothic" !important;
     font-size: 28px;
     color: white;
     font-weight: lighter;
@@ -51,7 +51,7 @@
     margin-top: -40px;
 }
 .base-credits{
-    font-family: "Century Gothic";
+    font-family: "Century Gothic" !important;
     font-style: italic;
     font-weight: 500;
     color: white;
@@ -75,7 +75,7 @@
     box-sizing: border-box;
 }
 .text-header{
-    font-family: "Century Gothic";
+    font-family: "Century Gothic" !important;
     font-size: 26px;
     font-weight: bold;
     color: white;
@@ -84,7 +84,7 @@
     margin-left: 20px;
 }
 .base-text01{
-    font-family: "GeosansLight";
+    font-family: "GeosansLight" !important;
     font-size: 24px;
     font-weight: 500;
     margin-left: 10px;
@@ -96,7 +96,7 @@
 
 }
 .base-footer{
-    font-family: "Century Gothic";
+    font-family: "Century Gothic" !important;
     font-size: 18px;
     font-weight: 500;
     color: white;
@@ -123,7 +123,7 @@
     width: 300px;
     height: 150px;
     background-color: rgb(35, 255, 35);
-    font-family: "Century Gothic";
+    font-family: "Century Gothic" !important;
     font-size: 24px;
     font-weight: bold;
     color: #FFFFFF;
@@ -156,7 +156,7 @@
     width: 300px;
     height: 150px;
     background-color: #1c62cc;
-    font-family: "Century Gothic";
+    font-family: "Century Gothic" !important;
     font-size: 24px;
     font-weight: bold;
     color: white;
@@ -187,21 +187,21 @@
 }
 .download-show{
     text-align: center;
-    font-family: "Century Gothic";
+    font-family: "Century Gothic" !important;
     font-size: 36px;
     color: white;
     text-shadow: 3px 3px 9px black;
 }
 .mod-version-text-overdownload{
     text-align: center;
-    font-family:  "Roboto";
+    font-family:  "Roboto" !important;
     color: white;
     position: static;
     margin-top: -20px;
 }
 .button-file-size{
     text-align: center;
-    font-family: "Century Gothic";
+    font-family: "Century Gothic" !important;
     font-size: 11px;
     position: static;
     color: white;
@@ -210,7 +210,7 @@
 }
 .download-count-file{
     text-align: center;
-    font-family: "Century Gothic";
+    font-family: "Century Gothic" !important;
     font-size: 11px;
     position: static;
     color: white;
