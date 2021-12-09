@@ -6,6 +6,12 @@
 @font-face {
     font-family: "GeosansLight";
     src: url("Geosans\ Light.ttf") format("truetype");
+    font-display: block;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("Roboto-Regular.ttf");
+    font-display: block;
 }
 
 .base-title{
