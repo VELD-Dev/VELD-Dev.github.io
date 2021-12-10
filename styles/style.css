@@ -14,6 +14,12 @@
     font-display: block;
 }
 
+.blank{
+    position: static;
+    display: block;
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
 .base-title{
     font-family: "Century Gothic" !important;
     font-size: 52px;
@@ -95,6 +101,18 @@
     position: static;
 
 }
+.base-text02{
+    font-family: "GeosansLight" !important;
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-top: -25px;
+    margin-bottom: 50px;
+    color: white;
+    text-align: center;
+    position: static;
+
+}
 .base-footer{
     font-family: "Century Gothic" !important;
     font-size: 18px;
@@ -112,9 +130,10 @@
     height: 30%;
     margin-top: 50px;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .button-group{
-    text-align:center;
+    text-align: center;
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 50px;
@@ -216,4 +235,112 @@
     color: white;
     display: block;
     margin-top: -10px;
+}
+.api{
+    display: block;
+    position: static;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 150px;
+}
+.api-desc{
+    display: block;
+    position: static;
+    margin-bottom: 20px;
+}
+.api-title{
+    display: block;
+    position: static;
+    font-family: "Century Gothic" !important;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.api-description{
+    display: block;
+    position: static;
+    font-family: "GeosansLight" !important;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    color: white;
+}
+.api-redirect{
+    display: block;
+    position: static;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.api-redirect-button{
+    position: static;
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 100px;
+    margin-bottom: 250px;
+}
+.api-dl-button{
+    position: static;
+    font-family: "Century Gothic" !important;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 15px;
+    margin: auto;
+    display: inline-block;
+    width: 300px;
+    height: 150px;
+    border-width: 0;
+    background-color: #1c62cc;
+    color: white;
+    cursor: pointer;
+}
+.api-dl-button:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px black;
+    transition-duration: 0.5s;
+}
+.api-dl-button:not(:hover){
+    transition-duration: 0.25s;
+}
+.api-dl-button:active{
+    transform: scale(0.9);
+    transition-duration: 0.25s;
+}
+.api-dl-button:not(:active){
+    transition-duration: 0.1s;
+}
+.coming-soon{
+    margin-top: 500px;
+    position: static;
+    font-family: "GeosansLight" !important;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 48px;
+}
+.download-api-div{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 25px;
+}
+.API-header{
+    font-family: "Century Gothic" !important;
+    font-weight: bolder;
+    font-size: 64px;
+    color: white;
+    text-align: center;
+}
+.API-underhead{
+    margin-top: -25px;
+    font-family: "Century Gothic" !important;
+    font-weight: bold;
+    font-size: 28px;
+    color: white;
+    text-align: center;
 }
