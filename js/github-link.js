@@ -1,4 +1,3 @@
-import fs from "fs";
 console.log("JavaScript loaded.")
 let version;
 const fs = new FileSystem()
