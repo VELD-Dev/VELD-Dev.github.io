@@ -18,7 +18,7 @@ getTotalDownloads().then(dlCount => {
     $("#download-count-per-versions").html(`Total downloads: ${dlCount}`)
 })
 
-}
+
 async function getLastVersionInfo() {
     return new Promise(async (resolve, reject) => {
         let result = await getJSON("https://api.github.com/repos/FFA-Modding/q-mod/releases");
