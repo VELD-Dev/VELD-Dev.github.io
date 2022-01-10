@@ -1,26 +1,23 @@
 console.log("JavaScript loaded.")
 let version;
-const fs = new FileSystem()
-const readCache = read("./cache.json")
-console.log(readCache)
 
-if(!readCache) {
-    getLastVersionInfo().then(versionRef => {
-        version = versionRef;
-        console.log(version.tag_name)
-        $("#last-version").html(`Version name: <b>${version.name}</b>`)
-        $("#build-authors").html(`Build author: ${version.author.login}`)
-    })
-    getLastPSARC().then(fileRef => {
-        let fileSize = (parseFloat(fileRef.size) / 1000).toFixed(2)
-        console.log(fileRef)
-        $("#href-direct-download").attr("href", fileRef.browser_download_url)
-        $("#file-size-dd").html(`(${fileRef.name} ${fileSize}KB)`)
-        $("#download-count-per-file").html(`(File downloads: ${fileRef.download_count})`)
-    })
-    getTotalDownloads().then(dlCount => {
-        $("#download-count-per-versions").html(`Total downloads: ${dlCount}`)
-    })
+getLastVersionInfo().then(versionRef => {
+    version = versionRef;
+    console.log(version.tag_name)
+    $("#last-version").html(`Version name: <b>${version.name}</b>`)
+    $("#build-authors").html(`Build author: ${version.author.login}`)
+})
+getLastPSARC().then(fileRef => {
+    let fileSize = (parseFloat(fileRef.size) / 1000).toFixed(2)
+    console.log(fileRef)
+    $("#href-direct-download").attr("href", fileRef.browser_download_url)
+    $("#file-size-dd").html(`(${fileRef.name} ${fileSize}KB)`)
+    $("#download-count-per-file").html(`(File downloads: ${fileRef.download_count})`)
+})
+getTotalDownloads().then(dlCount => {
+    $("#download-count-per-versions").html(`Total downloads: ${dlCount}`)
+})
+
 }
 async function getLastVersionInfo() {
     return new Promise(async (resolve, reject) => {
@@ -34,18 +31,6 @@ async function getLastVersionInfo() {
 //    FUNCTIONS    //
 /////////////////////
 //////         //////
-
-/**
- * 
- * @param {File} file Get a file and read it with FileSystem (FS)
- * @returns {JSON}
- */
-
-function read(file) {
-    let cacheFile = fs.root.getFile(file)
-    console.log(cacheFile)
-    return cacheFile;
-}
 
 async function getLastPSARC() {
     return new Promise(async (resolve, reject) => {
@@ -77,7 +62,7 @@ async function getJSON(url) {
     if(result){
         result = await result.json()
     }else{
-        result = { error: "An error as occured" }
+        result = { error: `An error as occured\nError:${result.text}` }
     }
     return result
 };
