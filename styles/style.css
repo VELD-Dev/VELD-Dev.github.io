@@ -68,7 +68,7 @@
 .base-body{
     margin: 0;
     height: 100%;
-    background-color: #111525;
+    color: #111525;
 }
 .infos-container1{
     display: block;
@@ -343,4 +343,9 @@
     font-size: 28px;
     color: white;
     text-align: center;
+}
+
+div.footer{
+    margin-top: 25px;
+    background-color: #080a12
 }
