@@ -68,7 +68,7 @@
 .base-body{
     margin: 0;
     height: 100%;
-    color: #111525;
+    background-color: #111525;
 }
 .infos-container1{
     display: block;
@@ -347,5 +347,5 @@
 
 div.footer{
     margin-top: 25px;
-    color: #080a12
+    background-color: #080a12
 }
