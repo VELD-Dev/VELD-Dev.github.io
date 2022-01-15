@@ -208,6 +208,8 @@
     text-align: center;
     font-family: "Century Gothic" !important;
     font-size: 36px;
+    margin-top: 100px;
+    margin-bottom: 50px;
     color: white;
     text-shadow: 3px 3px 9px black;
 }
@@ -348,4 +350,69 @@
 div.footer{
     margin-top: 25px;
     background-color: #080a12
+}
+
+.release-div{
+    display: block;
+    width: 70%;
+    height: 50%;
+    position:static;
+    top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+.table-releases{
+    font-family: "Century Gothic" !important;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: larger;
+}
+table, th, td {
+    border: 1px solid #FFFFFF;
+    border-collapse:collapse;
+}
+table {
+    margin: 0 auto;
+}
+
+.gotoAllReleases{
+    display: block;
+    width: 70%;
+    height: 30%;
+    margin-top: 50px;
+    align-content: center;
+    margin-bottom: 50px;
+}
+.gotoReleasesButton{
+    width: 300px;
+    height: 150px;
+    background-color: #1c62cc;
+    font-family: "Century Gothic" !important;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    border-radius: 15px;
+    border-width: 0px;
+    padding: 35px 75px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.gotoReleasesButton:hover{
+    box-shadow: 0px 0px 25px black;
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+}
+.gotoReleasesButton:not(:hover){
+    transition-duration: 0.25s;
+}
+.gotoReleasesButton:active{
+    transform: scale(0.9);
+    transition-duration: 0.5s;
+}
+.gotoReleasesButton:not(:hover){
+    transition-duration: 0.25s;
 }
